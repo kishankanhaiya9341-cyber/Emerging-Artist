@@ -1,1 +1,52 @@
-a
+/* Colors */
+:root {
+  --primary: #6C5CE7;
+  --accent: #00CFFF;
+  --bg-dark: #0f0f1a;
+  --text-light: #ffffff;
+  --text-muted: #aaaaaa;
+}
+
+/* Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 40px;
+  backdrop-filter: blur(12px);
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 42px;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: radial-gradient(circle at top, #1a1a2e, #0f0f1a);
+}
+
+.cta {
+  background: linear-gradient(45deg, #6C5CE7, #00CFFF);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 30px;
+  color: white;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+}
